@@ -49,7 +49,7 @@ public class Order1Servlet extends HttpServlet {
 	            return;
 	        }
 
-	        // Retrieve user input
+	       
 	       
 	        String paymentMethod = request.getParameter("payment");
 

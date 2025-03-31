@@ -29,12 +29,12 @@ public class MenuServlet extends HttpServlet {
 		            try {
 		                restaurentId = Integer.parseInt(restaurentIdStr);
 		            } catch (NumberFormatException e) {
-		                System.out.println("❌ Invalid restaurantId: " + restaurentIdStr);
+		                System.out.println("Invalid restaurantId: " + restaurentIdStr);
 		                resp.sendRedirect("home.jsp");
 		                return;
 		            }
 		        } else {
-		            System.out.println("❌ Missing restaurantId");
+		            System.out.println(" Missing restaurantId");
 		            resp.sendRedirect("home.jsp");
 		            return;
 		        }
@@ -45,11 +45,11 @@ public class MenuServlet extends HttpServlet {
 
 		        // ✅ Handle case where no menu items are found
 		        if (menuList == null || menuList.isEmpty()) {
-		            System.out.println("🚨 No menu found for restaurant ID: " + restaurentId);
+		            System.out.println(" No menu found for restaurant ID: " + restaurentId);
 		            req.setAttribute("menuList", null);
 		        } else {
 		            req.setAttribute("menuList", menuList);
-		            System.out.println("✅ Menu fetched successfully");
+		            System.out.println(" Menu fetched successfully");
 		        }
 
 		        // ✅ Forward to menu.jsp
