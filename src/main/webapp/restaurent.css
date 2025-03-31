@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff6600;
+    padding: 15px 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.search-box {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Restaurant Grid */
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Restaurant Card */
+.restaurant-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+}
+
+.restaurant-card h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.order-btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.order-btn:hover {
+    background: #e65c00;
+}
+
+/* No Restaurants Available */
+.no-restaurants {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
