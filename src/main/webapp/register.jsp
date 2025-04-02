@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Zwiggy</title>
+    <title>Register - Zwigato</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <!-- Navbar -->
+   
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">🍽️ Zwiggy</div>
+            <div class="logo">Zwigato</div>
             <div class="nav-links">
                 <a href="login.jsp" class="btn-primary">Login</a>
             </div>
         </div>
     </nav>
 
-    <!-- Registration Container -->
+  
     <div class="auth-container">
         <div class="auth-card">
-            <h2>Sign Up for Zwiggy</h2>
+            <h2>Sign Up for Zwigato</h2>
             <p class="auth-subtitle">Join us to discover the best food in your city</p>
 
 
@@ -55,7 +55,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>About Zwiggy</h4>
+                <h4>About Zwigato</h4>
                 <p>Discover the best restaurants in your area with Zwiggy.</p>
             </div>
             <div class="footer-section">
@@ -79,12 +79,12 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Zwiggy. All rights reserved.</p>
+            <p>&copy; 2024 Zwigato. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Optional: Add password strength checker
+        
         document.querySelector('input[name="password"]').addEventListener('input', function(e) {
             const password = e.target.value;
             const strengthIndicator = document.querySelector('.password-strength');
@@ -96,7 +96,7 @@
             
             strengthIndicator.style.display = 'block';
             
-            // Simple strength check
+         
             let strength = 'weak';
             if (password.length >= 8) strength = 'medium';
             if (password.length >= 12 && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[^A-Za-z0-9]/.test(password)) {

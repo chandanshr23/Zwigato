@@ -46,7 +46,6 @@ public class CartServlet extends HttpServlet {
             decreaseQuantity(req, cart);
         }
 
-        // Update cart count in session
         session.setAttribute("cartCount", cart.size());
 
         resp.sendRedirect("Cart.jsp");

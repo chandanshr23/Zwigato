@@ -22,6 +22,7 @@ public class RestaurentDAOImpl  implements RestaurentDAO
 	    	try {
 	    		Class.forName("com.mysql.cj.jdbc.Driver");
 	    		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/food_delivery","root","Chandan@8073");
+	    		System.out.println("connected");
 	    	}
 	    	catch(Exception e) {
 	    		e.printStackTrace();

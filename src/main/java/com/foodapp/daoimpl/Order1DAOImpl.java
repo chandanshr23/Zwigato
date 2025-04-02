@@ -12,7 +12,6 @@ public class Order1DAOImpl implements Order1DAO {
 
     private static Connection con;
 
-    // Static block for establishing the database connection
     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

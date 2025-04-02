@@ -6,18 +6,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menu - Zwiggy</title>
+    <title>Menu - Zwigato</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
 
     <div class="navbar">
-        <div class="logo">🍕 Zwiggy</div>
+        <div class="logo">🍕 Zwigato</div>
         <a href="home.jsp">Back to Restaurants</a>
     </div>
 
-    <!-- ✅ Added Extra Menu Section Below -->
     <main class="menu-container">
         <section class="menu-section">
             <h2>Restaurant Menu</h2>
@@ -41,7 +40,7 @@
 			        for (Menu m : sessionMenuList) {
 			%>
 			            <div class="menu-item">
-			            <!-- ✅ Image Section -->
+			          
                         <img src="<%= m.getImage() %>" alt="<%= m.getItem_name() %>" class="menu-img">
 			            
 			                <div class="item-details">

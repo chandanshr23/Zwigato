@@ -20,7 +20,7 @@ public class MenuServlet extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		        System.out.println("🚀 MenuServlet called");
 
-		        // ✅ Get restaurantId from request
+		       
 		        String restaurentIdStr = req.getParameter("restaurent_id");
 		        int restaurentId = 0;
 		        System.out.println(restaurentIdStr);
@@ -39,11 +39,11 @@ public class MenuServlet extends HttpServlet {
 		            return;
 		        }
 
-		        // ✅ Fetch menu from database
+		       
 		        MenuDAOImpl menuDAO = new MenuDAOImpl();
 		        List<Menu> menuList = (List<Menu>) menuDAO.getAllRestMenu(restaurentId);
 
-		        // ✅ Handle case where no menu items are found
+		       
 		        if (menuList == null || menuList.isEmpty()) {
 		            System.out.println(" No menu found for restaurant ID: " + restaurentId);
 		            req.setAttribute("menuList", null);

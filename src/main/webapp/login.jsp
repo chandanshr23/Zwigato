@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Zwiggy</title>
+    <title>Login - Zwigato</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
     <link rel="stylesheet" href="login.css">
 </head>
@@ -11,7 +11,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">🍽️ Zwiggy</div>
+            <div class="logo">Zwigato</div>
             <div class="nav-links">
                 <a href="register.jsp" class="btn-primary">Sign Up</a>
             </div>
@@ -39,7 +39,7 @@
                 <button type="submit" class="btn-primary auth-btn">Login</button>
             </form>
 
-            <p class="auth-footer">New to Zwiggy? <a href="register.jsp">Create an account</a></p>
+            <p class="auth-footer">New to Zwigato? <a href="register.jsp">Create an account</a></p>
         </div>
     </div>
 
@@ -47,7 +47,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>About Zwiggy</h4>
+                <h4>About Zwigato</h4>
                 <p>Discover the best restaurants in your area with Zwiggy.</p>
             </div>
             <div class="footer-section">
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Zwiggy. All rights reserved.</p>
+            <p>&copy; 2024 Zwigato. All rights reserved.</p>
         </div>
     </footer>
 </body>

@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurants - Zwiggy</title>
+    <title>Restaurants - Zwigato</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="home.css">
 </head>
@@ -17,10 +17,10 @@
         List<Restaurent> restaurents = (List<Restaurent>) request.getAttribute("restaurents");
     %>
 
-    <!-- Navbar -->
+   
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">🍽️ Zwiggy</div>
+            <div class="logo">🍽️ Zwigato</div>
             <div class="nav-links">
                 <% if (u != null) { %>
                     <div class="profile-dropdown">
@@ -41,12 +41,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    
     <div class="hero">
         <h1>Discover the best food in your city</h1>
     </div>
 
-    <!-- Search Bar -->
+    
     <div class="search-container">
         <input type="text" placeholder="Search for restaurants, cuisines or dishes..." class="search-box">
         <button class="search-btn">Search</button>
@@ -84,11 +84,11 @@
         </div>
     </div>
 
-    <!-- Footer -->
+   
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>About Zwiggy</h4>
+                <h4>About Zwigato</h4>
                 <p>Discover the best restaurants in your area with Zwiggy.</p>
             </div>
             <div class="footer-section">
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Zwiggy. All rights reserved.</p>
+            <p>&copy; 2024 Zwigato. All rights reserved.</p>
         </div>
     </footer>
 
@@ -138,12 +138,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Search functionality can be added here
+   
     const searchBtn = document.querySelector(".search-btn");
     if (searchBtn) {
         searchBtn.addEventListener("click", function() {
             const searchTerm = document.querySelector(".search-box").value;
-            // Implement search functionality
+          
             console.log("Searching for:", searchTerm);
         });
     }

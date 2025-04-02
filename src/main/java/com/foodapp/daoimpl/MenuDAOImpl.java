@@ -18,8 +18,7 @@ public class MenuDAOImpl implements MenuDAO {
     private static final String UPDATE_MENU_BY_ID = "UPDATE menu SET description=? WHERE menu_id=?";
 
 
-    // Static block for establishing the database connection
-    static {
+     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/food_delivery", "root", "Chandan@8073");
@@ -108,7 +107,7 @@ public class MenuDAOImpl implements MenuDAO {
         return result;
     }
 
-    // Extract menu list from ResultSet safely
+  
     List<Menu> extractMenuListFromResultSet(ResultSet resultSet) {
         List<Menu> menuList = new ArrayList<>();
         try {
